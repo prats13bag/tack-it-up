@@ -1,6 +1,6 @@
 {
   "env": {
-    "DB_PSWRD": "ZQDO6SdU1yHMX5x3",
+    "DB_PSWRD": "ToBeUpdated",
     "JWT_KEY": "any_longer_secret_key_string_for_encryption"
   }
 }
