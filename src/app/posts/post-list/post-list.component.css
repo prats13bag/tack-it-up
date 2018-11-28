@@ -1,0 +1,45 @@
+:host {
+  display: block;
+  margin-top: 1rem;
+}
+
+mat-expansion-panel {
+  background-color: #D4E157 ;
+}
+
+mat-spinner {
+  margin: auto;
+}
+
+mat-paginator {
+  margin-top: 1rem;
+}
+
+.column {
+  float: left;
+  width: 48%;
+  padding: 1%;
+  word-wrap: break-word;
+  white-space: pre-line;
+  text-align: justify;
+}
+
+.column img {
+  margin-top: 1rem;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  padding: 5px;
+  width: 100%;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 500px) {
+  .column {
+      width: 100%;
+  }
+}

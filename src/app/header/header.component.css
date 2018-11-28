@@ -1,0 +1,27 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+a.brand {
+  font-size: 32px;
+}
+
+.second-toolbar {
+  font-size: 14px;
+  background-color: white;
+}
+
+.nav-link:link {
+    color: black;
+}
+
+.nav-link:visited {
+    color: red;
+}

@@ -1,0 +1,38 @@
+<mat-toolbar color="accent">
+  <span>
+      <img src="favicon.ico" width="28" height="28">
+      <a class="brand"> tack-it-up!</a>
+  </span>
+  <span class="spacer"></span>
+  <ul>
+    <li>
+        <a mat-button routerLink="/">Read</a>
+    </li>
+    <li *ngIf="userIsAuthenticated">
+      <a mat-button routerLink="/create" routerLinkActive="mat-primary">Create</a>
+    </li>
+    <li *ngIf="!userIsAuthenticated">
+      <a mat-button routerLink="/auth/signup" routerLinkActive="mat-primary">Sign Up</a>
+    </li>
+    <li *ngIf="!userIsAuthenticated">
+      <a mat-button routerLink="/auth/login" routerLinkActive="mat-primary">Login</a>
+    </li>
+    <li *ngIf="userIsAuthenticated">
+      <button mat-button (click)="onLogout()">Logout</button>
+    </li>
+  </ul>
+
+</mat-toolbar>
+<mat-toolbar class="second-toolbar">
+  <mat-toolbar-row>
+    <span class="spacer"></span>
+    <mat-icon>favorite</mat-icon>
+    <span>&nbsp;</span>
+    <a href="http://github.com/prats13bag/tack-it-up" target="_blank" class="nav-link">
+      <span>A note-taking web app built on MEAN Stack</span>
+    </a>
+    <span>&nbsp;</span>
+    <mat-icon>favorite</mat-icon>
+    <span class="spacer"></span>
+  </mat-toolbar-row>
+</mat-toolbar>
