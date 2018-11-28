@@ -5,10 +5,10 @@
 
 ### Changes required before building the project
 1. Rename the folder to `mean-project` after cloning and unzipping
-2. Create a cluster on mongodb atlas (cloud db of mongodb), a database named "mean-project" in that cluster and two collections named "posts" in that database. Make sure to IP whitelist for all IP address for this cluster
+2. Create a cluster on mongodb atlas (cloud db of mongodb), a database named `mean-project` in that cluster and two collections named `posts` and `users` in that database. Make sure to IP whitelist for all IP address for this cluster
 3. Copy the SRV Connection String for this cluster which should something like this: `mongodb+srv://prats:<PASSWORD>@cluster0-gitbh.mongodb.net/test?retryWrites=true`
 4. Remove `?retryWrites=true` and in place of `<PASSWORD>` type-in `" + process.env.DB_PSWRD + "`, simultaneously add this `<PASSWORD>` in `nodemon.json` available in `src` folder while replacing the contents for `DB_PSWRD` key there
-5. Navigate to backend/app.js file and replace this path in line 13
+5. Navigate to `backend/app.js` file and replace this path in line 13
 
 
 ### Execution steps to build and run from command line
